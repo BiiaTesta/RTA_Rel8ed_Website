@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTA 2024 Website</title>
+    <link rel="stylesheet" href="Rel8ed_CSS.css"> <!-- Arquivo CSS da página principal -->
+    <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS do mini bot --> 
+</head>
+<body>
+    <!-- Cabeçalho com o logo da empresa no canto superior esquerdo -->
+    <div class="header">
+        <img src="/Imagens/rel8ed_logo.png" alt="Logo da Empresa" class="logo">
+        <!-- Menu de navegação interativo -->
+        <div class="menu">
+            <c-navigation>
+                <a href="Rel8ed_Main.html" class="parent active" slot="primary-items">Home</a>
+                <a href="Curriculum.html" slot="primary-items">Curriculum </a>
+                <a href="#sobre" slot="primary-items">About RTA</a>
+                <a href="#contato" slot="primary-items">Contact Us</a>
+            </c-navigation>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal da página -->
+    <div class="content">
+        <h2>Robot Training Academy</h2>
+        <p>In this page you can fing everything about the RTA Summer 2024 Program!</p>
+
+        <div class="Menu_Noticias">
+            <div class="menu-item" onclick="navigateTo('page1.html')">
+                <img src="image1.jpg" alt="Image 1">
+                <p>Texto 1</p>
+            </div>
+            <div class="menu-item" onclick="navigateTo('page2.html')">
+                <img src="image2.jpg" alt="Image 2">
+                <p>Texto 2</p>
+            </div>
+            <div class="menu-item" onclick="navigateTo('page3.html')">
+                <img src="image3.jpg" alt="Image 3">
+                <p>Texto 3</p>
+            </div>
+            <div class="menu-item" onclick="navigateTo('page4.html')">
+                <img src="image4.jpg" alt="Image 4">
+                <p>Texto 4</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="menu-divider"></div> -- Linha de divisória depois do menu --> 
+
+    <!-- Mini Bot -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">Mini Bot</div>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <!-- Mensagens aparecerão aqui -->
+            </div>
+            <div class="input-container">
+                <select id="questions">
+                    <option value="" disabled selected>Escolha uma pergunta</option>
+                    <option value="1">Pergunta 1</option>
+                    <option value="2">Pergunta 2</option>
+                    <option value="3">Pergunta 3</option>
+                </select>
+                <button onclick="getAnswer()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <div class="chat-button" id="chat-button" onclick="toggleChat()">💬</div>
+
+   <!-- Rodapé com informações de contato -->
+    <div class="footer">
+
+        <div class="Footer_Adress"> 
+        <img src="/Imagens/rel8ed_logo_white.png" alt="Logo da Empresa" class="logo2">
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>Company</p>
+        <p>About Us</p>
+        <p>Contact</p>
+        <p>In the News</p>
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>386 St. Paul Street Suite 102</p>
+        <p>St. Catharines, ON L2R 3N2</p>
+        <br>
+        <p>2235 Sheppard Ave E SUITE 902B,</p> 
+        <p>North York, ON M2J 5B5 </p> 
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>260 East Main St. #6000,</p>
+        <p>Rochester NY 14604</p>
+        <br>
+        <p>701 Ellicott Street,</p>
+        <p>Buffalo NY 14203</p> 
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Coloque aqui quaisquer outros scripts necessários para sua página principal -->
+</body>
+</html>

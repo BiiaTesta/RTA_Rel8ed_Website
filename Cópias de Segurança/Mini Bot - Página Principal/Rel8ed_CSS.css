@@ -1,0 +1,246 @@
+/* Estilos básicos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Importante para alinhar elementos corretamente */
+    justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
+    align-items: center; /* Centraliza na horizontal */
+    background-color: #f0f0f0;
+    min-height: 100vh; /* Garante altura mínima de 100% da viewport */
+    /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid hwb(0 87% 13%);
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos para o logo da empresa */
+.logo {
+    height: 50px;
+}
+
+.logo2{
+    height: 150px; 
+}
+
+/* Estilos personalizados para o menu */
+c-navigation a[slot="primary-items"] {
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #6bbec5; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative; /* Necessário para as pseudo-classes */
+}
+
+c-navigation a[slot="primary-items"]::after {
+    content: '|';
+    position: absolute;
+    right: -4px; /* Ajuste conforme necessário */
+    color: hwb(0 87% 13%); /* Cor da barra */
+}
+
+c-navigation a[slot="primary-items"]:last-child::after {
+    content: ''; /* Remove a barra do último item */
+}
+
+c-navigation a[slot="primary-items"]:hover {
+    background-color: #9df1fc00; /* Cor de fundo ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+c-navigation a[slot="primary-items"].active {
+    background-color: #c0f3ff00; /* Cor de fundo do item ativo */
+    color: rgb(0, 0, 0); /* Cor do texto do item ativo */
+}
+
+/* Estilos para as linhas inferior e superior de divisória 
+.menu-divider {
+    height: 0.5px;
+    background-color: hwb(0 0% 100%); /* Cor da linha de divisória */
+   /* margin: 1px 0; /* Ajuste conforme necessário */
+/* } */
+
+/* Estilos para o conteúdo principal */
+.content {
+    text-align: center; /* Centraliza o conteúdo principal */
+    /* padding: 20px; */
+    position: relative;
+    padding-bottom: 100px; /* altura do rodapé */
+    overflow:auto; 
+}
+
+/* Estilos para o rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #081529;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    /* position: fixed; */
+    bottom: 0;
+    height: 200px; /* Define a altura do rodapé */
+    position: relative;
+    bottom: 0;
+    background-color:#09162A;
+    width: 100%; /* tamanho total no eixo x (largura)*/
+}
+
+.Footer_Adress{
+    float: left;
+    width: 25%;
+    color: rgb(255, 255, 255); /* Cor do texto do item ativo */
+    font-size: 12px;
+}
+
+/* Menu para noticias */
+
+.Menu_Noticias{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.menu-item {
+    width: 200px;
+    height: 250px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    text-align: center;
+    margin: 1rem;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu-item p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+
+
+/* Estilos do widget do mini bot */
+.chat-widget {
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    display: none; /* Oculto por padrão */
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    bottom: 60px; /* Alinhamento acima do botão de chat */
+    right: 20px;
+    background: white;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 70%;
+    clear: both;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.chat-button {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
