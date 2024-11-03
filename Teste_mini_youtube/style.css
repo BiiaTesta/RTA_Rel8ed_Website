@@ -169,3 +169,43 @@ c-navigation a[slot="primary-items"].active {
     font-weight: bold;
 }
 
+/* Estilos para os detalhes da aula */
+.lecture-details {
+    margin-top: 20px;
+}
+
+.topo-conteudo h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.topo-conteudo h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Seção de informações do professor */
+.info-professor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.info-professor img {
+    border-radius: 50%;
+}
+
+.info-professor div {
+    font-size: 14px;
+    color: #555;
+}
