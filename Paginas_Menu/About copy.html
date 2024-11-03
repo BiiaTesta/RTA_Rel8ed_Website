@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTA 2024 Website</title>
+    <link rel="stylesheet" href="About.css"> <!-- Arquivo CSS da página principal -->
+    
+</head>
+<body>
+    <!-- Cabeçalho com o logo da empresa no canto superior esquerdo -->
+    <div class="header">
+        <img src="../Imagens/rel8ed_logo.png" alt="Logo da Empresa" class="logo">
+        <!-- Menu de navegação interativo -->
+        <div class="menu">
+            <c-navigation>
+                <a href="../index.html" slot="primary-items">Home</a>
+                <a href="../Curriculum/Curriculum.html" slot="primary-items">Curriculum </a>
+                <a href="../Paginas_Menu/About.html" class="parent active" slot="primary-items">About RTA</a>
+                <a href="#contato" slot="primary-items">Ask Us</a>
+            </c-navigation>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal da página -->
+    
+    <div class="container">
+        <header>
+            <h1 id="pageTitle">Conheça Nossos Professores</h1>
+        </header>
+    
+        <div class="main-content">
+            <!-- Menu lateral fixo -->
+            <div class="teacher-menu">
+                <h2>Professores</h2>
+                <ul id="teacherList">
+                    <li data-teacher="T1">Prof. A</li>
+                    <li data-teacher="T2">Prof. B</li>
+                    <li data-teacher="T3">Prof. C</li>
+                    <li data-teacher="T4">Prof. D</li>
+                    <li data-teacher="T5">Prof. E</li>
+                </ul>
+            </div>
+            
+            <!-- Área de informações do professor -->
+            <div class="teacher-info">
+                <h2 id="teacherName">Nome do Professor</h2>
+                <img id="teacherPhoto" src="placeholder.jpg" alt="Foto do Professor">
+                <p id="teacherSummary">Resumo do Professor</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="About.js"></script>
+    <!-- Rodapé da página -->
+    <div class="footer">
+        <p>&copy; 2024 Robot Training Academy. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
