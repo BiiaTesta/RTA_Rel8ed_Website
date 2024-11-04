@@ -141,12 +141,11 @@ header h1 {
 }
 
 main {
-    /* margin: 20px ; */
-    /* max-width: 800px; */
     padding: 20px;
     text-align: left;
 }
 
+/* Estilo para a seção PowerBI: tópicos empilhados */
 .test-section {
     background-color: #fff;
     border-radius: 8px;
@@ -170,6 +169,40 @@ main {
     margin-left: 20px;
 }
 
+/* Estilo para a seção FAQ: tópicos lado a lado */
+.test-section2 {
+    display: inline-block;
+    width: 23.2%; /* Ajuste para exibir dois itens por linha */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.test-section2 h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.test-section2 p {
+    margin-bottom: 10px;
+}
+
+.test-section2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Ajuste para a FAQ em dispositivos menores */
+@media (max-width: 768px) {
+    .test-section2 {
+        width: 100%; /* Os itens FAQ ficam em coluna em telas pequenas */
+    }
+}
+
 /* Estilo para a divisória */
 .divider {
     width: 100%;
@@ -184,31 +217,4 @@ footer {
     background-color: #333;
     color: #f4f4f9;
     font-size: 0.9em;
-}
-
-
-/* Ajusta as seções para caberem lado a lado */
-.test-section2 {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex: 1 1 30%;
-    min-width: 250px;
-}
-
-/* Estilo dos títulos e listas */
-.test-section2 h2 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.test-section2 p {
-    margin-bottom: 10px;
-}
-
-.test-section2 ul {
-    list-style-type: disc;
-    margin-left: 20px;
 }
