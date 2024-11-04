@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
         T1: {
             titulo: "Chat GPT & AI",
             professor: "Tapan Praydot",
-            conteudo: "Hands-on teaching on how to use Chat GPT API and AI to solve challenges. \nBelow is all of the tools and resources that Tapan discussed and/or used during tonight's session: \n\n   <b>Free Course(1 hr):</b> <a href='https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/'>https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/</a> \n<b>OpenAI documentation:</b> <a href='https://platform.openai.com/docs/overview'>https://platform.openai.com/docs/overview</a>  \n<b>Community Forum:</b> <a href='https://community.openai.com/categories'>https://community.openai.com/categories</a>  \n<b>Github with lots of examples and sample code:</b> <a href='https://github.com/openai/openai-cookbook'>https://github.com/openai/openai-cookbook</a> ",
+            conteudo: "Hands-on teaching on how to use Chat GPT API and AI to solve challenges. \nBelow is all of the tools and resources that Tapan discussed and/or used during tonight's session: \n\n   Free Course(1 hr): <a href='https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/'>https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/</a> \nOpenAI documentation: <a href='https://platform.openai.com/docs/overview'>https://platform.openai.com/docs/overview</a>  \nCommunity Forum: <a href='https://community.openai.com/categories'>https://community.openai.com/categories</a>  \nGithub with lots of examples and sample code: <a href='https://github.com/openai/openai-cookbook'>https://github.com/openai/openai-cookbook</a> ",
         },
         T2: {
             titulo: "Power BI | Intro for Dataset Project",
-            professor: "Prof. B",
-            conteudo: "Introdução ao Power BI para análise de dados.",
+            professor: "Trei Alexander",
+            conteudo: "PowerBI introduction for data analysis project, and kaggle instruction for database use. \n\n Kaggle Website: <a href='https://www.kaggle.com/'>https://www.kaggle.com/</a>",
         },
         T3: {
             titulo: "Power BI | Students Teaching",
-            professor: "Prof. C",
-            conteudo: "Estudantes apresentando casos de uso do Power BI.",
+            professor: "RTA Students",
+            conteudo: "Students presenting PowerBI Project.",
         },
         T4: {
             titulo: "Advanced Python",
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         T5: {
             titulo: "Website Prototyping",
-            professor: "Prof. E",
-            conteudo: "Práticas de prototipagem para sites.",
+            professor: "Beatriz B. Testa Pessoa",
+            conteudo: "Hands-on teaching on website prototyping. A prototype is a preliminary model or draft that allows designers to test and refine ideas before actual development. \n\n We prototype to: Validate Early Concepts, Facilitate Communication, Test Functionalities, Refine Features and Flows and Gather Feedback. \n\n Here are the resources and websites Beatriz used during the session: Figma Website: <a href='https://www.figma.com/'>Figma</a> \n Beatriz's Hackathon Prototype: <a href='https://www.figma.com/proto/fVfnQnCU7QA5pb7wikuvuX/Rel8ed-RTA-Website?node-id=1-2&node-type=canvas&t=Gdm6gz3HOWJmrEzM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2'>View Prototype</a>",
         }
     };
 

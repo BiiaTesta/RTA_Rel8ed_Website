@@ -1,0 +1,214 @@
+/* --------------------------- Estilos Básicos para a Página -------------------------------------- */
+
+.indent {
+    text-indent: 50px;
+    display: inline-block;
+}
+
+/* Estilos básicos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    flex-direction: column; /* Importante para alinhar elementos corretamente */
+    justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
+    align-items: center; /* Centraliza na horizontal */
+    background-color: #f0f0f0;
+    min-height: 100vh; /* Garante altura mínima de 100% da viewport */
+    /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid hwb(0 87% 13%);
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos para o logo da empresa */
+.logo {
+    height: 50px;
+}
+
+.logo2{
+    height: 150px; 
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Adicione esta linha para centralizar o texto */
+    width: 100%;
+    min-height: 400px; /* Ajuste conforme necessário */
+    
+}
+
+/* Se o texto estiver em um elemento específico dentro de .content */
+.content h1, .content p { /* Ajuste conforme o tipo de elemento */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos personalizados para o menu superior */
+c-navigation a[slot="primary-items"] {
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #6bbec5; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative; /* Necessário para as pseudo-classes */
+}
+
+c-navigation a[slot="primary-items"]::after {
+    content: '|';
+    position: absolute;
+    right: -4px; /* Ajuste conforme necessário */
+    color: hwb(0 87% 13%); /* Cor da barra */
+}
+
+c-navigation a[slot="primary-items"]:last-child::after {
+    content: ''; /* Remove a barra do último item */
+}
+
+c-navigation a[slot="primary-items"]:hover {
+    background-color: #9df1fc00; /* Cor de fundo ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+c-navigation a[slot="primary-items"].active {
+    background-color: #c0f3ff00; /* Cor de fundo do item ativo */
+    color: rgb(0, 0, 0); /* Cor do texto do item ativo */
+}
+
+/* Estilos para o rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #081529;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    /* position: fixed; */
+    bottom: 0;
+    height: 200px; /* Define a altura do rodapé */
+    position: relative;
+    bottom: 0;
+    background-color:#09162A;
+    width: 100%; /* tamanho total no eixo x (largura)*/
+}
+
+.Footer_Adress{
+    float: left;
+    width: 25%;
+    color: rgb(255, 255, 255); /* Cor do texto do item ativo */
+    font-size: 12px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #F2C811;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    /* margin: 20px ; */
+    /* max-width: 800px; */
+    padding: 20px;
+    text-align: left;
+}
+
+.test-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.test-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.test-section p {
+    margin-bottom: 10px;
+}
+
+.test-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilo para a divisória */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f4f4f9;
+    font-size: 0.9em;
+}
+
+
+/* Ajusta as seções para caberem lado a lado */
+.test-section2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+/* Estilo dos títulos e listas */
+.test-section2 h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.test-section2 p {
+    margin-bottom: 10px;
+}
+
+.test-section2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTA 2024 Website</title>
+    <link rel="stylesheet" href="./page6.css"> <!-- Arquivo CSS da página principal -->
+</head>
+<body>
+    <!-- Cabeçalho com o logo da empresa no canto superior esquerdo -->
+    <div class="header">
+        <img src="../Imagens/rel8ed_logo.png" alt="Logo da Empresa" class="logo">
+        <!-- Menu de navegação interativo -->
+        <div class="menu">
+            <c-navigation>
+                <a href="../index.html" slot="primary-items" >Home</a>
+                <a href="../Curriculum/Curriculum.html" slot="primary-items">Curriculum </a>
+                <a href="../Paginas_Menu/About.html" slot="primary-items">About RTA</a>
+                <a href="#contato" slot="primary-items">Ask Us</a>
+            </c-navigation>
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Instructions for RTA Tests</h1>
+    </header>
+    <br>
+    <p>Below are the instructions for each test to guide you through the process.</p>
+    <br>
+    <p>These tests will help determine who will work on special projects, monetary projects, and who will have the opportunity to fill any open positions that become available. </p>
+    <p>This will also be a good way to show off your skills for the people who are looking for work and looking to get their names in front of important people. We are looking for people to score 90% or higher. </p>
+    
+    <main>
+        <section class="test-section">
+            <h2>Test 1: Data Labeling</h2> 
+            <br>
+            <p><b>Objective:</b> The goal is to label a given dataset correctly based on the provided guidelines.</p>
+            <br>
+            
+            <p><b>Your task is to:</b></p>
+            <ul>
+                <li>Label whether the company header data (name, address, city) matches with the website (Column F “match”).</li>
+                <li>If the company redirects to another URL, specify the redirected URL in (Column G “redirected_url”).</li>
+            </ul>
+            <br>
+            <p>The file contains 600,000 rows. Each of you is expected to go through 500 rows, but there should be no overlap between the labelers. You can assign different ranges using the index column.</p>
+            <br>
+            <p><b>Instructions:</b></p>
+            <ul>
+                <li>Open the DataLabeling folder and locate the dataset and guidelines document.</li>
+                <li>Review the guidelines to understand the labeling criteria.</li>
+                <li>Use the <b>data_labeling.py</b> script to label the data. Complete the missing parts of the script if needed.</li>
+                <li>Run the script using: python <b>data_labeling.py</b> --input <b>data/raw_data.csv</b> --output <b>data/labeled_data.csv</b>.</li>
+                <li>Verify your labeled dataset by checking the output CSV to ensure the labels follow the criteria outlined in the guidelines.</li>
+                <li>Submit the labeled <b>labeled_data.csv</b> file along with your completed <b>data_labeling.py</b> script.</li>
+            </ul>
+        </section>
+
+        <!-- <div class="divider"></div> -->
+
+        <section class="test-section">
+            <h2>Test 2: Database Management</h2>
+            <br> 
+            <p><b>Objective:</b> Create and manage a database to store, query, and retrieve data efficiently.</p>
+            <br>
+            <p>All resources and instructions for this task are available here: <a href='https://github.com/rel8edto/RTA2024test/tree/main'>RTA 2024 Test Resources</a></p>
+            <br>
+            <p><b>Instructions:</b></p>
+            <ul>
+                <li>Open the <b>DatabaseManagement</b> folder and locate the <b>db_management.py</b> script.</li>
+                <li>Review the <b>db_schema.sql</b> file to understand the database schema that needs to be created.</li>
+                <li>Implement the functions in <b>db_management.py</b> to create the database, insert data, and run queries.</li>
+                <li>Test the script using: python <b>db_management.py</b> and ensure the database is created, and data is successfully inserted.</li>
+                <li>Run sample queries to retrieve specific records and verify they match the expected results.</li>
+                <li>Submit your completed <b>db_management.py</b> script and any SQL query files you used.</li>
+            </ul>
+        </section>
+
+        <!-- <div class="divider"></div> -->
+
+        <section class="test-section">
+            <h2>Test 3: Machine Learning</h2> 
+            <br>
+            <p><b>Objective:</b> Build and evaluate a machine learning model using the provided dataset.</p>
+            <br>
+            <p>All resources and instructions for this task are available here: <a href='https://github.com/rel8edto/RTA2024test/tree/main'>RTA 2024 Test Resources</a></p>
+            <br>
+            <p><b>Instructions:</b></p>
+            <ul>
+                <li>Open the MachineLearning folder and review the <b>ml_model.py</b> script.</li>
+                <li>Implement a supervised learning model (e.g., classification or regression) based on the type of data provided.</li>
+                <li>Split the dataset into training and testing sets and evaluate the model using metrics like accuracy, precision, recall, or RMSE.</li>
+                <li>Run the model using: python <b>ml_model.py</b> --train <b>data/train.csv</b> --test <b>data/test.csv</b>.</li>
+                <li>Save the trained model using joblib or pickle.</li>
+                <li>Submit your completed <b>ml_model.py</b> script and the saved model file.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    
+   <!-- Rodapé com informações de contato -->
+    <div class="footer">
+
+        <div class="Footer_Adress"> 
+        <img src="../Imagens/rel8ed_logo_white.png" alt="Logo da Empresa" class="logo2">
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>Company</p>
+        <p>About Us</p>
+        <p>Contact</p>
+        <p>In the News</p>
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>386 St. Paul Street Suite 102</p>
+        <p>St. Catharines, ON L2R 3N2</p>
+        <br>
+        <p>2235 Sheppard Ave E SUITE 902B,</p> 
+        <p>North York, ON M2J 5B5 </p> 
+        </div>
+
+        <div class="Footer_Adress"> 
+        <p>260 East Main St. #6000,</p>
+        <p>Rochester NY 14604</p>
+        <br>
+        <p>701 Ellicott Street,</p>
+        <p>Buffalo NY 14203</p> 
+        </div>
+        
+    </div>
+
+
+    <!-- Coloque aqui quaisquer outros scripts necessários para sua página principal -->
+</body>
+</html>
+
