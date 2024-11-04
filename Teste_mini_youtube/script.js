@@ -1,49 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
     const videoList = document.getElementById("videoList");
-    const videoTitle = document.getElementById("videoTitle");
+    // const videoTitle = document.getElementById("videoTitle");
 
     // Dados sobre os conteúdos e professores
     const lectureDetails = {
         T1: {
             titulo: "Chat GPT & AI",
-            professor: "Prof. A",
-            foto: "link_da_foto_professor_a.jpg",
-            conteudo: "Conteúdo da aula sobre Chat GPT e inteligência artificial.",
-            resumo: "Especialista em IA e aprendizado de máquina."
+            professor: "Tapan Praydot",
+            conteudo: "Hands-on teaching on how to use Chat GPT API and AI to solve challenges. \nBelow is all of the tools and resources that Tapan discussed and/or used during tonight's session: \n\n   <b>Free Course(1 hr):</b> <a href='https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/'>https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/</a> \n<b>OpenAI documentation:</b> <a href='https://platform.openai.com/docs/overview'>https://platform.openai.com/docs/overview</a>  \n<b>Community Forum:</b> <a href='https://community.openai.com/categories'>https://community.openai.com/categories</a>  \n<b>Github with lots of examples and sample code:</b> <a href='https://github.com/openai/openai-cookbook'>https://github.com/openai/openai-cookbook</a> ",
         },
         T2: {
             titulo: "Power BI | Intro for Dataset Project",
             professor: "Prof. B",
-            foto: "link_da_foto_professor_b.jpg",
             conteudo: "Introdução ao Power BI para análise de dados.",
-            resumo: "Analista de dados com experiência em BI."
         },
         T3: {
             titulo: "Power BI | Students Teaching",
             professor: "Prof. C",
-            foto: "link_da_foto_professor_c.jpg",
             conteudo: "Estudantes apresentando casos de uso do Power BI.",
-            resumo: "Professor com foco em BI para educação."
         },
         T4: {
             titulo: "Advanced Python",
-            professor: "Prof. D",
-            foto: "link_da_foto_professor_d.jpg",
-            conteudo: "Aula avançada sobre Python para projetos complexos.",
-            resumo: "Engenheiro de software e especialista em Python."
+            professor: "Patrick Pessoa",
+            conteudo: "Hands-on teaching on Python. This is the second lecture - Advanced Module. \n Here are the resources and websites Patrick used during the session: \n\n <a href='https://www.teletrust.de/en/teletrust/mitglieder/'>Ekinops Channel Partners</a> \n <a href='https://www.teletrust.de/en/teletrust/mitglieder/'>Teletrust Members</a> \n<a href='https://dell.my.site.com/FindAPartner/s/partnersearch?language=en_US&country=us&partnerType=findareseller'>Dell Partner Search</a> \n The XPath extension Patrick mentioned can be downloaded here:<a href='https://chromewebstore.google.com/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl?hl=en&pli=1'>XPath Helper for Chrome</a>",
         },
         T5: {
             titulo: "Website Prototyping",
             professor: "Prof. E",
-            foto: "link_da_foto_professor_e.jpg",
             conteudo: "Práticas de prototipagem para sites.",
-            resumo: "Designer de UI/UX com experiência em prototipagem."
         }
     };
 
     // Função para mudar o título do vídeo e destacar o item da lista
     function updateVideoTitleAndHighlight(videoName, selectedElement) {
-        videoTitle.textContent = videoName;
+        // videoTitle.textContent = videoName;
 
         // Remove o destaque anterior
         const highlighted = document.querySelector(".highlight");
@@ -55,18 +45,19 @@ document.addEventListener("DOMContentLoaded", function() {
         selectedElement.classList.add("highlight");
     }
 
-    // Função para atualizar os detalhes da aula
-    function updateLectureDetails(lectureId) {
-        const details = lectureDetails[lectureId];
-        if (details) {
-            document.getElementById("lectureTitle").textContent = details.titulo;
-            document.getElementById("professorName").textContent = `Professor: ${details.professor}`;
-            document.getElementById("lectureContent").textContent = details.conteudo;
-            document.getElementById("professorPhoto").src = details.foto;
-            document.getElementById("professorNameInfo").textContent = details.professor;
-            document.getElementById("professorSummary").textContent = details.resumo;
-        }
+    // Função para atualizar os detalhes da aula, incluindo quebras de linha no resumo
+function updateLectureDetails(lectureId) {
+    const details = lectureDetails[lectureId];
+    if (details) {
+        document.getElementById("lectureTitle").textContent = details.titulo;
+        document.getElementById("professorName").textContent = `Professor: ${details.professor}`;
+        document.getElementById("lectureContent").textContent = details.conteudo;
+
+        // Substitui "\n" por "<br>" para quebras de linha no HTML
+        document.getElementById("lectureContent").innerHTML = details.conteudo.replace(/\n/g, "<br>");
     }
+}
+
 
     videoList.addEventListener("click", function(e) {
         if(e.target && e.target.nodeName === "LI") {
