@@ -37,7 +37,7 @@ body {
 }
 
 .logo2{
-    height: 150px; 
+    height: 150px;
 }
 
 /* Estilos personalizados para o menu superior */
@@ -105,7 +105,7 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estiliza o título */
 h1 {
-    margin-bottom: 20px; /* Define a margem inferior */
+    margin-bottom: 0px; /* Define a margem inferior */
     padding-left: 10px; /* Define o preenchimento à esquerda */
     font-size: 20px;
 }
@@ -156,32 +156,11 @@ td:empty {
 
 
 
-/* Estiliza a nova div com textos */
-.info-lectures {
-    text-align: left;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    /*background-color: #ffffff;*/
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
-    /*border-radius: 10px;*/
-}
-
-.info-lectures h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.info-lectures p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
 
 
 /* Estiliza o contêiner principal da tabela de palestras */
 .container-lecture {
-    width: 80%;
+    width: 93%;
     margin: 0 auto;
     text-align: center;
 }
@@ -205,8 +184,26 @@ td:empty {
     overflow: hidden;
 }
 
+.table-lecture2 {
+    width: 90%;
+    border-collapse: separate;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 /* Estiliza as células do cabeçalho e do corpo da tabela de palestras */
 .table-lecture th, .table-lecture td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Estiliza as células do cabeçalho e do corpo da tabela de palestras */
+.table-lecture2 th, .table-lecture2 td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #dddddd;
@@ -219,8 +216,18 @@ td:empty {
     font-weight: bold;
 }
 
+.table-lecture2 th {
+    background-color: #f18740;
+    color: white;
+    font-weight: bold;
+}
+
 /* Estiliza as células do corpo da tabela de palestras */
 .table-lecture td {
+    background-color: #f9f9f9;
+}
+
+.table-lecture2 td {
     background-color: #f9f9f9;
 }
 
@@ -229,8 +236,18 @@ td:empty {
     background-color: #f2f2f2;
 }
 
+/* Estiliza as células das linhas pares do corpo da tabela de palestras */
+.table-lecture2 tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
 /* Estiliza as células vazias da tabela de palestras */
 .table-lecture td:empty {
+    background-color: #ffffff;
+}
+
+/* Estiliza as células vazias da tabela de palestras */
+.table-lecture2 td:empty {
     background-color: #ffffff;
 }
 
@@ -238,3 +255,74 @@ td:empty {
 /*.table-lecture td:hover {
     background-color: #ddd;
 }*/
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* Container principal */
+
+
+/* Tabela */
+.container-lecture {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-lecture h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-lecture {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-lecture2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+/* Estilo das caixinhas para ocuparem toda a largura */
+.info-box {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0; /* Espaçamento entre as caixas */
+    width: 95%; /* Ocupa a largura da página */
+    box-sizing: border-box; /* Garante que o padding não expanda a caixa */
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos dos blocos */
+.info-box h1 {
+    color: #333;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+.info-box dd li {
+    margin-left: 20px;
+    color: #555;
+    font-size: 1em;
+    margin-top: 10px;
+}
