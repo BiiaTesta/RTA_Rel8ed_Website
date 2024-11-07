@@ -131,7 +131,7 @@ body {
 header {
     background-color: #F2C811;
     color: #000000;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -145,20 +145,26 @@ main {
     text-align: left;
 }
 
-/* Estilo para a seção cursos PowerBI: tópicos empilhados */
+/* ----------------------- Estilo para a seção cursos PowerBI: tópicos lado a lado ----------------------- */
 .test-section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px 0;
     
 }
 .container {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    /*gap: 20px;  Espaçamento entre os blocos */
-    padding: 20px;
+    justify-content: space-between; /* Espaça as colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 0px;
+}
+
+.column {
+    flex: 1; /* Faz com que cada coluna ocupe a mesma largura */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .test-section h2 {
@@ -176,7 +182,20 @@ main {
     margin-left: 20px;
 }
 
-/* Estilo para a seção FAQ: tópicos lado a lado */
+/* Ajuste para a PBI em dispositivos menores */
+@media (max-width: 768px) {
+    .test-section {
+        flex: 1 1 18%; /* Ajusta para duas caixas por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .test-section {
+        flex: 1 1 100%; /* Empilha as caixas em telas muito pequenas */
+    }
+}
+
+/* ----------------------- Estilo para a seção FAQ: tópicos lado a lado ----------------------- */
 .test-section2 {
     display: inline-block;
     /* width: 23.2%; Ajuste para exibir dois itens por linha */
@@ -184,7 +203,7 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px; /* padding para o texto dentro do bloco branco */
     margin: 10px;
     vertical-align: top;
     height: 300px; /* Defina uma altura fixa que seja adequada */
@@ -218,24 +237,29 @@ main {
     flex-wrap: wrap;
     gap: 20px; /* Espaço entre as caixas */
     justify-content: space-between;
+    padding: 00px;
 }
 
-/* Estilo para a seção PBI: tópicos lado a lado */
+/* ----------------------- Estilo para a seção PBI: tópicos empilhados ----------------------- */
 .PBI-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaço entre as caixas */
-    justify-content: space-between;
+    justify-content: space-between; /* Espaça as colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 0px;
+}
+
+.column {
+    flex: 1; /* Faz com que cada coluna ocupe a mesma largura */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .test-section3 {
-    flex: 1 1 18%; /* Garante que cada caixa ocupe aproximadamente 18% da largura */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
 }
 
 .test-section3 h2 {
