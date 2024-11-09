@@ -10,13 +10,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* display: flex; */
+    display: flex;
     flex-direction: column; /* Importante para alinhar elementos corretamente */
     justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
     align-items: center; /* Centraliza na horizontal */
     background-color: #f0f0f0;
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
     /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
 }
 
 /* Estilos para o cabeçalho */
@@ -49,6 +50,7 @@ body {
     text-align: center; /* Adicione esta linha para centralizar o texto */
     width: 100%;
     min-height: 400px; /* Ajuste conforme necessário */
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
     
 }
 
@@ -91,14 +93,14 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para o rodapé */
 .footer {
-    padding: 20px;
+    padding: 20px !important;
     text-align: center;
     background-color: #081529;
     border-top: 1px solid #ddd;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     /* position: fixed; */
-    bottom: 0;
-    height: 200px; /* Define a altura do rodapé */
+    bottom: 0 !important;
+    height: 200px !important; /* Define a altura do rodapé */
     position: relative;
     bottom: 0;
     background-color:#09162A;
@@ -114,14 +116,16 @@ c-navigation a[slot="primary-items"].active {
 
 /* ------------------------------------------------------------------------------------------ */
 
+
 /* styles.css */
 
-* {
+.text p{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 
 body {
     background-color: #f4f4f9;
@@ -143,6 +147,7 @@ header h1 {
 main {
     padding: 20px;
     text-align: left;
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
 }
 
 /* ----------------------- Estilo para a seção cursos PowerBI: tópicos lado a lado ----------------------- */
@@ -158,6 +163,7 @@ main {
     justify-content: space-between; /* Espaça as colunas */
     gap: 20px; /* Espaçamento entre as colunas */
     padding: 0px;
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
 }
 
 .column {
@@ -169,8 +175,10 @@ main {
 
 .test-section h2 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px !important;
     font-size: 1em;
+    
+    margin-top: 0 !important;
 }
 
 .test-section p {
@@ -182,18 +190,6 @@ main {
     margin-left: 20px;
 }
 
-/* Ajuste para a PBI em dispositivos menores */
-@media (max-width: 768px) {
-    .test-section {
-        flex: 1 1 18%; /* Ajusta para duas caixas por linha em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .test-section {
-        flex: 1 1 100%; /* Empilha as caixas em telas muito pequenas */
-    }
-}
 
 /* ----------------------- Estilo para a seção FAQ: tópicos lado a lado ----------------------- */
 .test-section2 {
@@ -206,7 +202,7 @@ main {
     padding: 20px; /* padding para o texto dentro do bloco branco */
     margin: 10px;
     vertical-align: top;
-    height: 300px; /* Defina uma altura fixa que seja adequada */
+    /* height: 300px; Defina uma altura fixa que seja adequada */
     box-sizing: border-box; /* Para garantir que padding não aumente a altura */
 }
 
@@ -214,6 +210,7 @@ main {
     color: #333;
     margin-bottom: 10px;
     font-size: 1em;
+    margin-top: 0 !important;
 }
 
 .test-section2 p {
@@ -223,13 +220,6 @@ main {
 .test-section2 ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-
-/* Ajuste para a FAQ em dispositivos menores */
-@media (max-width: 768px) {
-    .test-section2 {
-        width: 100%; /* Os itens FAQ ficam em coluna em telas pequenas */
-    }
 }
 
 .faq-container {
@@ -266,6 +256,7 @@ main {
     color: #333;
     margin-bottom: 10px;
     font-size: 1em;
+    margin-top: 0 !important;
 }
 
 .test-section3 p {
@@ -277,32 +268,3 @@ main {
     margin-left: 20px;
 }
 
-/* Ajuste para a PBI em dispositivos menores */
-@media (max-width: 768px) {
-    .test-section3 {
-        flex: 1 1 18%; /* Ajusta para duas caixas por linha em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .test-section3 {
-        flex: 1 1 100%; /* Empilha as caixas em telas muito pequenas */
-    }
-}
-
-
-/* Estilo para a divisória */
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #f4f4f9;
-    font-size: 0.9em;
-}

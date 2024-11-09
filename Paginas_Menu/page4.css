@@ -16,7 +16,6 @@ body {
     align-items: center; /* Centraliza na horizontal */
     background-color: #f0f0f0;
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
-    /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
 }
 
 /* Estilos para o cabeçalho */
@@ -50,7 +49,6 @@ body {
     width: 100%;
     min-height: 400px; /* Ajuste conforme necessário */
     flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
-    
 }
 
 /* Se o texto estiver em um elemento específico dentro de .content */
@@ -114,96 +112,13 @@ c-navigation a[slot="primary-items"].active {
 }
 
 /* ------------------------------------------------------------------------------------------ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
+main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.main-content {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-}
-
-/* Menu lateral fixo */
-.teacher-menu {
-    flex: 1;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-
-    width: 200px;
-    position: fixed;
-    top: 100px; /* Ajuste a posição conforme necessário */
-    left: 0;
-    height: calc(100vh - 100px);
-    
-}
-
-.teacher-menu h2 {
-    margin-bottom: 15px;
-}
-
-.teacher-menu ul {
-    list-style: none;
-}
-
-.teacher-menu li {
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Estilo para o item selecionado */
-.teacher-menu .highlight {
-    background-color: #d4edda;
-    font-weight: bold;
-}
-
-.teacher-menu li:hover {
-    background-color: #eee;
-}
-
-/* Área de informações do professor */
-.teacher-info {
-    flex: 1;
-    margin-left: 220px; /* Espaço para o menu fixo */
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.teacher-info h2 {
-    margin-bottom: 10px;
-}
-
-.teacher-info img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.teacher-info p {
-    max-width: 600px;
-    font-size: 1rem;
-    line-height: 1.5;
+    justify-content: space-around;
+    text-align: left;
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
 }

@@ -49,6 +49,7 @@ body {
     text-align: center; /* Adicione esta linha para centralizar o texto */
     width: 100%;
     min-height: 400px; /* Ajuste conforme necessário */
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
     
 }
 
@@ -126,6 +127,8 @@ c-navigation a[slot="primary-items"].active {
 body {
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
