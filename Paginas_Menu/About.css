@@ -114,11 +114,7 @@ c-navigation a[slot="primary-items"].active {
 }
 
 /* ------------------------------------------------------------------------------------------ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -141,69 +137,119 @@ header {
     max-width: 1200px;
 }
 
-/* Menu lateral fixo */
-.teacher-menu {
+/* ------------------------------------------------------------------------------------------ */
+
+.academy-section1, .academy-section2{
+    margin: 20px;
+    padding: 5px;
     flex: 1;
-    background-color: #fff;
-    padding: 10px;
+}
+
+.text_main{
     border: 1px solid #ccc;
-
-    width: 200px;
-    position: fixed;
-    top: 100px; /* Ajuste a posição conforme necessário */
-    left: 0;
-    height: calc(100vh - 100px);
-    
-}
-
-.teacher-menu h2 {
-    margin-bottom: 15px;
-}
-
-.teacher-menu ul {
-    list-style: none;
-}
-
-.teacher-menu li {
     padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Estilo para o item selecionado */
-.teacher-menu .highlight {
-    background-color: #d4edda;
-    font-weight: bold;
-}
-
-.teacher-menu li:hover {
-    background-color: #eee;
-}
-
-/* Área de informações do professor */
-.teacher-info {
-    flex: 1;
-    margin-left: 220px; /* Espaço para o menu fixo */
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Estilos adicionais para a seção Robot Training Academy */
+.academy-header {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    background-image: url('background_image.png'); /* Coloque a imagem do background aqui */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.academy-header h1 {
+    color: #f04a1f;
+    font-size: 36px;
+}
+
+.academy-header p {
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #f04a1f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.academy-section1 h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.academy-section2 h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.academy-section1 p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+    margin-left: 0;
+
+}
+
+.academy-section2 p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+
+}
+
+.partners {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.teacher-info h2 {
-    margin-bottom: 10px;
+.partners h2 {
+    color: white;
+    text-align: center;
 }
 
-.teacher-info img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.partners p {
+    color: #ddd;
+    font-size: 18px;
+    text-align: center;
 }
 
-.teacher-info p {
-    max-width: 600px;
-    font-size: 1rem;
-    line-height: 1.5;
+.partners ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partners ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
