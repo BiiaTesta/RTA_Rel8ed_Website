@@ -17,6 +17,7 @@ body {
     background-color: #f0f0f0;
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
     /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
 }
 
 /* Estilos para o cabeçalho */
