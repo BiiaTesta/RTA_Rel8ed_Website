@@ -241,6 +241,7 @@ main {
     padding: 0px;
 }
 
+
 .column {
     flex: 1; /* Faz com que cada coluna ocupe a mesma largura */
     display: flex;
@@ -271,5 +272,43 @@ main {
     list-style-type: disc;
     margin-left: 20px;
     text-align: justify;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.PBI-1-1-image{
+    width: 500px;
+}
+
+.PBI-1 {
+    margin: 10px; /* Reduzido para evitar quebra de linha */
+    padding: 5px;
+    width: 30%; /* Já está adequado para três elementos lado a lado */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    text-align: center;
+}
+
+.PBI-2 {
+    margin: 10px; /* Reduzido para evitar quebra de linha */
+    padding: 5px;
+    width: 45%; /* Já está adequado para três elementos lado a lado */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    text-align: center;
+}
+
+.PBI-1 p{
+    text-align: center;
+}
+
+.PBI-2 p{
+    text-align: center;
+}
+
+.PBI-general {
+    padding: 10px;
+    display: flex;
+    /* Remova o justify-content para evitar que os elementos se separem demais */
+    justify-content: space-between; /* Espaça as colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
 }
 
