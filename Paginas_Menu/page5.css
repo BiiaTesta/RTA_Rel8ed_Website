@@ -133,7 +133,8 @@ body {
 }
 
 header {
-    background-color: #F2C811;
+    background-color: #f2c911a9;
+    /* background-color: #F2C811; */
     color: #000000;
     padding: 10px;
     text-align: center;
