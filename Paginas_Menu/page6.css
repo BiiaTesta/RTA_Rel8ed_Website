@@ -15,6 +15,7 @@ body {
     background-color: #f0f0f0;
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
     /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+    margin: 0;
 }
 
 /* Estilos para o cabeçalho */
@@ -99,7 +100,6 @@ c-navigation a[slot="primary-items"].active {
     bottom: 0;
     height: 200px; /* Define a altura do rodapé */
     position: relative;
-    bottom: 0;
     background-color:#09162A;
     width: 100%; /* tamanho total no eixo x (largura)*/
 }
@@ -115,11 +115,12 @@ c-navigation a[slot="primary-items"].active {
 
 /* styles.css */
 
-* {
+.text-all p {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    margin-left: 10px;
 }
 
 body {
@@ -168,11 +169,18 @@ main {
 
 .test-section p {
     margin-bottom: 10px;
+    margin: 0;
+    text-indent: 3ch;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .test-section ul {
     list-style-type: disc;
     margin-left: 20px;
+    padding-left: 30px;
+    /* margin: 0;
+    padding: 0; */
 }
 
 /* Remove a divisória quando as seções estão lado a lado */
@@ -195,14 +203,5 @@ footer {
     color: #f4f4f9;
     font-size: 0.9em;
 }
-
-p {
-    margin: 0;
-    text-indent: 3ch;
-  }
-
- ul {
-    padding-left: 30px;
-  }
 
   
