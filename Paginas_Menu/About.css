@@ -139,17 +139,30 @@ header {
 
 /* ------------------------------------------------------------------------------------------ */
 
-.academy-section1, .academy-section2{
+.academy-section1{
     margin: 20px;
     padding: 5px;
-    flex: 1;
+    /* flex: 1; */
+    width: 60%;
+}
+
+.academy-section2{
+    margin: 20px;
+    padding: 5px;
+    /* flex: 1; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .text_main{
     border: 1px solid #ccc;
     padding: 10px;
     display: flex;
-    width: 100%;
+    /* width: 95%; */
+    justify-content: space-between;
+    /* flex-flow: row wrap; */
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -158,34 +171,43 @@ header {
 .academy-header {
     background-color: #ffffff;
     padding: 40px;
-    text-align: center;
-    background-image: url('background_image.png'); /* Coloque a imagem do background aqui */
-    background-size: cover;
-    background-position: center;
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0.082)),linear-gradient(rgba(244, 244, 244, 0.575),rgba(244, 244, 244, 0.897)),url(https://www.rel8ed.to/wp-content/uploads/2021/06/Untitled-design23.png);
+    background-size: auto,auto,cover;
+    background-position: 20% 20%; 
     width: 100%;
     box-sizing: border-box;
+    height: 300px;
+
+    text-shadow: 0px 5px 40px rgb(233, 133, 86)
 }
 
 .academy-header h1 {
     color: #f04a1f;
     font-size: 36px;
+    margin:0;
+    padding:0;
 }
 
 .academy-header p {
-    color: #5c5c5c;
+    color: #000000;
     font-size: 18px;
+    margin:0;
+    padding:0;
 }
 
 .btn {
     background-color: #f04a1f;
     color: white;
     padding: 15px 30px;
-    border: none;
+    border: 1px solid #f05024;
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
     display: inline-block;
+
+    border-radius: 10px;
 }
 
 
@@ -207,25 +229,37 @@ header {
     color: #555;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
+    /* max-width: 900px; */
     margin: 0 auto 40px auto;
-    text-align: left;
+    text-align: justify;
     margin-left: 0;
+    margin:20px
 
+}
+
+.academy-section1 li {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    /* max-width: 800px; */
+    margin: 0 auto 4px auto;
+    text-align: justify;
+    margin-left: 0;
 }
 
 .academy-section2 p {
     color: #555;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto 40px auto;
     text-align: left;
 
 }
 
 .partners {
-    background-color: #1a1a2e;
+    background-image: linear-gradient(rgba(8,21,42,0.89),rgba(8,21,42,0.89)),url(http://rel8edtostage.wpengine.com/wp-content/uploads/2021/03/LED-Concept.jpg);
+    background-color: #08152a;
     color: white;
     padding: 60px 20px;
     width: 100%;
@@ -242,6 +276,7 @@ header {
     color: #ddd;
     font-size: 18px;
     text-align: center;
+    
 }
 
 .partners ul {
@@ -252,4 +287,25 @@ header {
 .partners ul li {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+
+/* ------------------------------------- */
+
+.DAn-image{
+    width: 500px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-grow: 1; */
+    margin: auto;
+    display: block;
+}
+
+.Team-image{
+    width: 600px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-grow: 1; */
+    margin: auto;
+    display: block;
 }

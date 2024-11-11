@@ -216,11 +216,13 @@ main {
 
 .test-section2 p {
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .test-section2 ul {
     list-style-type: disc;
     margin-left: 20px;
+    text-align: justify;
 }
 
 .faq-container {
@@ -262,10 +264,12 @@ main {
 
 .test-section3 p {
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .test-section3 ul {
     list-style-type: disc;
     margin-left: 20px;
+    text-align: justify;
 }
 
