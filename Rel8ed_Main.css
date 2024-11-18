@@ -16,6 +16,7 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     min-height: 100vh;
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
 
 /* Estilos para o cabeçalho */
@@ -47,6 +48,7 @@ body {
     text-align: center;
     width: 100%;
     min-height: 25em; /* equivalente a 400px */
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
 
 .content h1, .content p {
@@ -87,20 +89,24 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para o rodapé */
 .footer {
-    padding: 1.25em; /* equivalente a 20px */
+    padding: 20px;
     text-align: center;
     background-color: #081529;
-    border-top: 0.0625em solid #ddd;
+    border-top: 1px solid #ddd;
     box-sizing: border-box;
-    height: 12.5em; /* equivalente a 200px */
-    width: 100%;
+    /* position: fixed; */
+    bottom: 0;
+    height: 200px; /* Define a altura do rodapé */
+    position: relative;
+    background-color:#09162A;
+    width: 100%; /* tamanho total no eixo x (largura)*/
 }
 
-.Footer_Adress {
+.Footer_Adress{
     float: left;
     width: 25%;
-    color: rgb(255, 255, 255);
-    font-size: 0.75em; /* equivalente a 12px */
+    color: rgb(255, 255, 255); /* Cor do texto do item ativo */
+    font-size: 12px;
 }
 
 /* ------------------------------------------------------------------------------------------ */

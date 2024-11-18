@@ -18,6 +18,7 @@ body {
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
     /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
     flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    /* flex-wrap: wrap; Permite ajuste ao aumentar o zoom */
 }
 
 /* Estilos para o cabeçalho */
@@ -114,6 +115,7 @@ c-navigation a[slot="primary-items"].active {
     font-size: 12px;
 }
 
+
 /* ------------------------------------------------------------------------------------------ */
 
 
@@ -124,6 +126,7 @@ c-navigation a[slot="primary-items"].active {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    padding-left: 20px;
 }
 
 
@@ -144,6 +147,7 @@ header h1 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
     text-align: left;
+    padding-left: 20px;
 }
 
 main {
@@ -166,6 +170,7 @@ main {
     gap: 20px; /* Espaçamento entre as colunas */
     padding: 0px;
     flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    
 }
 
 .column {
