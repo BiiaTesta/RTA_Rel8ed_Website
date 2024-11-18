@@ -25,9 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
             conteudo: "Hands-on teaching on Python. This is the second lecture - Advanced Module. \n Here are the resources and websites Patrick used during the session: \n\n <a href='https://www.teletrust.de/en/teletrust/mitglieder/'>Ekinops Channel Partners</a> \n <a href='https://www.teletrust.de/en/teletrust/mitglieder/'>Teletrust Members</a> \n<a href='https://dell.my.site.com/FindAPartner/s/partnersearch?language=en_US&country=us&partnerType=findareseller'>Dell Partner Search</a> \n The XPath extension Patrick mentioned can be downloaded here:<a href='https://chromewebstore.google.com/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl?hl=en&pli=1'>XPath Helper for Chrome</a>",
         },
         T5: {
-            titulo: "Website Prototyping",
+            titulo: "Website Prototyping | Figma",
             professor: "Beatriz B. Testa Pessoa",
-            conteudo: "Hands-on teaching on website prototyping. A prototype is a preliminary model or draft that allows designers to test and refine ideas before actual development. \n\n We prototype to: Validate Early Concepts, Facilitate Communication, Test Functionalities, Refine Features and Flows and Gather Feedback. \n\n Here are the resources and websites Beatriz used during the session: Figma Website: <a href='https://www.figma.com/'>Figma</a> \n Beatriz's Hackathon Prototype: <a href='https://www.figma.com/proto/fVfnQnCU7QA5pb7wikuvuX/Rel8ed-RTA-Website?node-id=1-2&node-type=canvas&t=Gdm6gz3HOWJmrEzM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2'>View Prototype</a>",
+            conteudo: "Hands-on teaching on website prototyping with Figma Software. \n\nA prototype is a preliminary model or draft that allows designers to test and refine ideas before actual development. We prototype to: Validate Early Concepts, Facilitate Communication, Test Functionalities, Refine Features and Flows and Gather Feedback. \n\n Here are the resources and websites Beatriz used during the session: Figma Website: <a href='https://www.figma.com/'>Figma</a> \n Beatriz's Hackathon Prototype: <a href='https://www.figma.com/proto/fVfnQnCU7QA5pb7wikuvuX/Rel8ed-RTA-Website?node-id=1-2&node-type=canvas&t=Gdm6gz3HOWJmrEzM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2'>View Prototype</a>",
+        },
+        T6: {
+            titulo: "Website Prototyping | HTML and CSS",
+            professor: "Beatriz B. Testa Pessoa",
+            conteudo: "Hands-on teaching on website prototyping with basic HTML and CSS. \n Here are the resources from this class: \n\n To collab and store your code: <a href='https://github.com/'>Github</a> \n To help you code: <a href='https://chatgpt.com/'>ChatGPT</a> or <a href='https://gemini.google.com/'>Google Gemini</a> \n Here are the links to download the tools used: <a href='https://code.visualstudio.com/download'>Visual Studio Code</a> ; <a href='https://github.com/apps/desktop?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs'>GitHub Desktop</a> ; <a href='https://git-scm.com/downloads'>Git Bash</a>",
         }
     };
 
