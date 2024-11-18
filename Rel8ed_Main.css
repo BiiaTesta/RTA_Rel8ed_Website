@@ -139,7 +139,7 @@ c-navigation a[slot="primary-items"].active {
 .menu-item {
     width: 12.5em; /* equivalente a 200px */
     height: 15.625em; /* equivalente a 250px */
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    background: linear-gradient(145deg, #ffffff, #eae3e3);
     border-radius: 20px;
     /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.7); */
     display: flex;
@@ -226,20 +226,15 @@ c-navigation a[slot="primary-items"].active {
 /* -------------------------------------------------------------------------------- */
 
 .after-menu {
-    background-color: #ffffff;
-    padding: 40px;
-    text-align: center;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0.082)),linear-gradient(rgba(244, 244, 244, 0.575),rgba(244, 244, 244, 0.897)),url(https://www.rel8ed.to/wp-content/uploads/2021/06/Untitled-design23.png);
-    background-size: auto,auto,cover;  */
-    background-position: 20% 20%; 
-    width: 100%;
-    box-sizing: border-box;
-    height: 200px;
-
-    text-shadow: 0px 5px 40px rgba(39, 226, 251, 0.452)
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    /* width: 95%; */
+    justify-content: space-between;
+    /* flex-flow: row wrap; */
 }
 
-.after-menu h1 {
+/* .after-menu h1 {
     color: #000000;
     font-size: 36px;
     margin:0;
@@ -251,4 +246,78 @@ c-navigation a[slot="primary-items"].active {
     font-size: 18px;
     margin:0;
     padding:0;
+} */
+
+/* --------------------------------------------------------------------- */
+
+.academy-section1{
+    margin: 20px;
+    padding: 5px;
+    /* flex: 1; */
+    width: 70%;
+}
+
+.academy-section2{
+    margin: 20px;
+    padding: 5px;
+    /* flex: 1; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.academy-section1 h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.academy-section2 h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.academy-section1 p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    /* max-width: 900px; */
+    margin: 0 auto 40px auto;
+    text-align: justify;
+    margin-left: 0;
+    margin:20px
+
+}
+
+.academy-section1 li {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    /* max-width: 800px; */
+    margin: 0 auto 4px auto;
+    text-align: justify;
+    margin-left: 0;
+}
+
+.academy-section2 p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    /* max-width: 800px; */
+    margin: 0 auto 40px auto;
+    text-align: left;
+
+}
+
+.Bip-image{
+    width: 500px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-grow: 1; */
+    margin: auto;
+    display: block;
 }
