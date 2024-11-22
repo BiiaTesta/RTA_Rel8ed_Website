@@ -116,7 +116,7 @@ c-navigation a[slot="primary-items"].active {
 
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -143,7 +143,7 @@ c-navigation a[slot="primary-items"].active {
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 15px
+    border-radius: 15px;
 }
 
 .video-menu h2 {
@@ -173,13 +173,14 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para os detalhes da aula */
 .lecture-details {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
     
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 15px
+    border-radius: 15px;
+    width: 1300px;
 }
 
 .lecture-details h1{
@@ -221,4 +222,10 @@ c-navigation a[slot="primary-items"].active {
 .info-professor div {
     font-size: 14px;
     color: #555;
+}
+
+iframe{
+    width: 1300px;
+    height: 730px;
+    border-radius: 15px;
 }
