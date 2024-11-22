@@ -33,6 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
             titulo: "Website Prototyping | HTML and CSS",
             professor: "Beatriz B. Testa Pessoa",
             conteudo: "Hands-on teaching on website prototyping with basic HTML and CSS. \n Here are the resources from this class: \n\n To collab and store your code: <a href='https://github.com/'>Github</a> \n To help you code: <a href='https://chatgpt.com/'>ChatGPT</a> or <a href='https://gemini.google.com/'>Google Gemini</a> \n Here are the links to download the tools used: <a href='https://code.visualstudio.com/download'>Visual Studio Code</a> ; <a href='https://github.com/apps/desktop?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs'>GitHub Desktop</a> ; <a href='https://git-scm.com/downloads'>Git Bash</a>",
+        },
+        T7: {
+            titulo: "Tableau",
+            professor: "Guarav Sindhwani",
+            conteudo: "",
         }
     };
 

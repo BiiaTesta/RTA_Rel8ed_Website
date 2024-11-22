@@ -143,6 +143,7 @@ c-navigation a[slot="primary-items"].active {
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 15px
 }
 
 .video-menu h2 {
@@ -167,11 +168,22 @@ c-navigation a[slot="primary-items"].active {
 .video-menu li.highlight {
     background-color: #d4edda;
     font-weight: bold;
+    border-radius: 10px
 }
 
 /* Estilos para os detalhes da aula */
 .lecture-details {
     margin-top: 20px;
+
+    
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px
+}
+
+.lecture-details h1{
+    border-bottom: 1px solid #ccc ;
 }
 
 .topo-conteudo h1 {
