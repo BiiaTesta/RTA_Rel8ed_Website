@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         T7: {
             titulo: "Tableau",
             professor: "Guarav Sindhwani",
-            conteudo: "",
+            conteudo: "Tableau explenation and hands-on for data analysis project. \n  Below are some resources that Guarav used during the lecture: \n\n Tableau for University Students: \nFollow instructions on this page to get access: <a href='https://www.tableau.com/academic/students'>Tableau for University Students</a> \n Once signed up, use this link for Tableau's e-learning platform: <a href='https://elearning.tableau.com/'>Tableau e-learning</a> \n\n Free Tableau Desktop Public Version: \n Download Tableau Public here: <a href='https://public.tableau.com/en-us/s/download'>Tableau Public</a>\n\n YouTube Learning Channels: \n<a href='https://www.youtube.com/@vizwiz'>Viz Wiz YouTube Channel</a> <a href='https://www.youtube.com/@sqlbelle'>SQL Belle YouTube Channel</a>",
         }
     };
 
