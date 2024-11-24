@@ -151,7 +151,7 @@ header h1 {
 }
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: left;
     flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
 }
@@ -168,7 +168,7 @@ main {
     display: flex;
     justify-content: space-between; /* Espaça as colunas */
     gap: 20px; /* Espaçamento entre as colunas */
-    padding: 0px;
+    padding: 20px;
     flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
     
 }
@@ -236,7 +236,7 @@ main {
     flex-wrap: wrap;
     gap: 20px; /* Espaço entre as caixas */
     justify-content: space-between;
-    padding: 00px;
+    padding: 20px;
 }
 
 /* ----------------------- Estilo para a seção PBI: tópicos empilhados ----------------------- */
@@ -253,6 +253,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
 }
 
 .test-section3 {

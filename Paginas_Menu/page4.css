@@ -8,13 +8,17 @@
 /* Estilos básicos para o corpo do documento */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column; /* Importante para alinhar elementos corretamente */
     justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
     align-items: center; /* Centraliza na horizontal */
     background-color: #f0f0f0;
     min-height: 100vh; /* Garante altura mínima de 100% da viewport */
-    margin:0;
+    /* padding-bottom: 100px; /* Espaço para o mini bot quando visível */
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    /* flex-wrap: wrap; Permite ajuste ao aumentar o zoom */
 }
 
 /* Estilos para o cabeçalho */
@@ -47,7 +51,8 @@ body {
     text-align: center; /* Adicione esta linha para centralizar o texto */
     width: 100%;
     min-height: 400px; /* Ajuste conforme necessário */
-    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    
 }
 
 /* Se o texto estiver em um elemento específico dentro de .content */
@@ -89,14 +94,14 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para o rodapé */
 .footer {
-    padding: 20px;
+    padding: 20px !important;
     text-align: center;
     background-color: #081529;
     border-top: 1px solid #ddd;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     /* position: fixed; */
-    bottom: 0;
-    height: 200px; /* Define a altura do rodapé */
+    bottom: 0 !important;
+    height: 200px !important; /* Define a altura do rodapé */
     position: relative;
     bottom: 0;
     background-color:#09162A;
@@ -110,17 +115,80 @@ c-navigation a[slot="primary-items"].active {
     font-size: 12px;
 }
 
+
 /* ------------------------------------------------------------------------------------------ */
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: space-around;
-    text-align: left;
-    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+
+/* styles.css */
+
+.text p{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
 }
 
+header {
+    background-color: #f27611a9;
+    /* background-color: #F2C811; */
+    color: #000000;
+    padding: 5px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+main {
+    padding: 00px;
+    text-align: left;
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    width: 100%;
+}
+
+/* -------------------------------------------------------------- */
+
+.test-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaça as colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 20px;
+    flex-grow: 1; /* Expande o conteúdo principal para ocupar o espaço disponível */
+    
+}
+
+.column {
+    flex: 1; /* Faz com que cada coluna ocupe a mesma largura */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.test-section h2 {
+    color: #333;
+    margin-bottom: 0px !important;
+    font-size: 1em;
+    
+    margin-top: 0 !important;
+}
+
+.test-section p {
+    margin-bottom: 10px;
+}
+
+.test-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
