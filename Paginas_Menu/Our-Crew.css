@@ -155,7 +155,7 @@ c-navigation a[slot="primary-items"].active {
   
   /* Container da equipe */
   .team-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 2rem;
