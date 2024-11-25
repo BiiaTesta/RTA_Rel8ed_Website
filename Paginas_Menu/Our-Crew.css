@@ -1,0 +1,201 @@
+/* --------------------------- Estilos Básicos para a Página -------------------------------------- */
+
+.indent {
+    text-indent: 3em;
+    display: inline-block;
+}
+
+/* Estilos básicos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625em 1.25em; /* equivalente a 10px 20px */
+    background-color: #f8f8f8;
+    border-bottom: 0.0625em solid hwb(0 87% 13%);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 3.125em; /* equivalente a 50px */
+}
+
+.logo2 {
+    height: 9.375em; /* equivalente a 150px */
+}
+
+/* Estilos para o conteúdo principal */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.content h1{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Estilos personalizados para o menu superior */
+c-navigation a[slot="primary-items"] {
+    font-family: 'Arial';
+    font-size: 1em;
+    color: #6bbec5;
+    text-decoration: none;
+    padding: 0.625em 0.9375em; /* equivalente a 10px 15px */
+    position: relative;
+}
+
+c-navigation a[slot="primary-items"]::after {
+    content: '|';
+    position: absolute;
+    right: -0.25em; /* equivalente a -4px */
+    color: hwb(0 87% 13%);
+}
+
+c-navigation a[slot="primary-items"]:last-child::after {
+    content: '';
+}
+
+c-navigation a[slot="primary-items"]:hover {
+    background-color: #9df1fc00;
+    color: #000000;
+}
+
+c-navigation a[slot="primary-items"].active {
+    background-color: #c0f3ff00;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para o rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #081529;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    /* position: fixed; */
+    bottom: 0;
+    height: 200px; /* Define a altura do rodapé */
+    position: relative;
+    background-color:#09162A;
+    width: 100%; /* tamanho total no eixo x (largura)*/
+}
+
+.Footer_Adress{
+    float: left;
+    width: 25%;
+    color: rgb(255, 255, 255); /* Cor do texto do item ativo */
+    font-size: 12px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  .header2 {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .header2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header2 p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Container da equipe */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Card de cada membro */
+  .team-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-card h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
