@@ -229,9 +229,9 @@ c-navigation a[slot="primary-items"].active {
 
 .text_main{
     /* border: 1px solid #ccc; */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
-    /* width: 95%; */
+    width: 100%; 
     justify-content: space-between;
     /* flex-flow: row wrap; */
     background-color: #ffffff;

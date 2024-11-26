@@ -97,233 +97,173 @@ c-navigation a[slot="primary-items"].active {
 
 /* ------------------------------------------------------------------------------------------ */
 
-/* Estiliza o contêiner principal */
-.container {
-    width: 80%; /* Define a largura do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-    text-align: center; /* Centraliza o texto */
-}
-
-/* Estiliza o título */
-h1 {
-    margin-bottom: 0px; /* Define a margem inferior */
-    padding-left: 10px; /* Define o preenchimento à esquerda */
-    font-size: 20px;
-}
-
-/* Estiliza a tabela */
-table {
-    width: 90%; /* Define a largura da tabela */
-    border-collapse: collapse; /* Remove o espaçamento entre as células */
-    background-color: #ffffff; /* Define a cor de fundo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor da tabela */
-    margin: 0 auto; /* Centraliza a tabela horizontalmente */
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Estiliza as células do cabeçalho e do corpo */
-th, td {
-    padding: 10px; /* Define o tamanho do preenchimento */
-    text-align: center; /* Centraliza o texto nas células */
-    border: 1px solid #dddddd; /* Adiciona uma borda às células */
-}
-
-/* Estiliza as células do cabeçalho */
-th {
-    background-color: #ef7015; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto do cabeçalho */
-}
-
-/* Estiliza as células do corpo */
-td {
-    background-color: #f9f9f9; /* Define a cor de fundo das células */
-}
-
-/* Estiliza as células das linhas pares do corpo */
-tr:nth-child(even) td {
-    background-color: #f2f2f2; /* Define a cor de fundo das células das linhas pares */
-}
-
-/* Estiliza as células vazias */
-td:empty {
-    background-color: #ffffff; /* Define a cor de fundo das células vazias */
-}
-
-/* Estiliza as células quando o mouse passa sobre elas */
-/* td:hover {
-    background-color: #e2e2e2; /* Define a cor de fundo quando o mouse passa sobre as células */
-/* } */
-
-
-
-
-
-/* Estiliza o contêiner principal da tabela de palestras */
-.container-lecture {
-    width: 93%;
-    margin: 0 auto;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  .header2 {
     text-align: center;
-}
-
-/* Estiliza o título da tabela de palestras */
-.container-lecture h1 {
-    margin-bottom: 20px;
-    padding-left: 10px;
-    font-size: 24px;
-}
-
-/* Estiliza a tabela de palestras */
-.table-lecture {
-    width: 90%;
-    border-collapse: separate;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;;
+    /* padding: 2rem 1rem; */
+    /* background-color: #4CAF50;
+    color: #fff; */
+  }
+  
+  .header2 h1 {
+    font-size: 1.5rem;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .header2 p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Container da equipe */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 100%;
     margin: 0 auto;
-    border-spacing: 0;
+  }
+  
+  /* Card de cada membro */
+  .team-card {
+    background: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
-
-.table-lecture2 {
-    width: 90%;
-    border-collapse: separate;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Estiliza as células do cabeçalho e do corpo da tabela de palestras */
-.table-lecture th, .table-lecture td {
-    padding: 15px;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-card h2 {
+    font-size: 1.5rem;
+    color: #19A39D;
+    /* margin-bottom: 0.5rem; */
     text-align: left;
-    border-bottom: 1px solid #dddddd;
-}
+  }
 
-/* Estiliza as células do cabeçalho e do corpo da tabela de palestras */
-.table-lecture2 th, .table-lecture2 td {
-    padding: 15px;
+  .team-card h3 {
+    font-size: 0.8rem;
+    color: #454b45;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .team-card li {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
     text-align: left;
-    border-bottom: 1px solid #dddddd;
-}
+  }
 
-/* Estiliza as células do cabeçalho da tabela de palestras */
-.table-lecture th {
-    background-color: #38cfcf;
-    color: white;
-    font-weight: bold;
-}
-
-.table-lecture2 th {
-    background-color: #f18740;
-    color: white;
-    font-weight: bold;
-}
-
-/* Estiliza as células do corpo da tabela de palestras */
-.table-lecture td {
-    background-color: #f9f9f9;
-}
-
-.table-lecture2 td {
-    background-color: #f9f9f9;
-}
-
-/* Estiliza as células das linhas pares do corpo da tabela de palestras */
-.table-lecture tr:nth-child(even) td {
-    background-color: #f2f2f2;
-}
-
-/* Estiliza as células das linhas pares do corpo da tabela de palestras */
-.table-lecture2 tr:nth-child(even) td {
-    background-color: #f2f2f2;
-}
-
-/* Estiliza as células vazias da tabela de palestras */
-.table-lecture td:empty {
-    background-color: #ffffff;
-}
-
-/* Estiliza as células vazias da tabela de palestras */
-.table-lecture2 td:empty {
-    background-color: #ffffff;
-}
-
-/* Estiliza as células quando o mouse passa sobre elas na tabela de palestras */
-/*.table-lecture td:hover {
-    background-color: #ddd;
-}*/
+  .team-card dt {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+    text-align: left;
+  }
 
 
-
-/* ------------------------------------------------------------------------------------------ */
-
+/* --------------------------------------------------------------*/
 
 
-/* Container principal */
-
-
-/* Tabela */
 .container-lecture {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
 }
 
-.container-lecture h1 {
-    font-size: 1.5em;
+h1 {
+    text-align: center;
     color: #333;
-    margin-bottom: 20px;
-    text-align: left;
-    border-bottom: 2px solid #ddd;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
-.table-lecture {
+.table-lecture, .table-lecture2 {
     width: 100%;
     border-collapse: collapse;
-}
-
-.table-lecture2 {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-
-
-
-
-
-
-
-/* Estilo das caixinhas para ocuparem toda a largura */
-.info-box {
+    margin: 20px 0;
     background-color: #f9f9f9;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px 0; /* Espaçamento entre as caixas */
-    width: 95%; /* Ocupa a largura da página */
-    box-sizing: border-box; /* Garante que o padding não expanda a caixa */
-    font-family: Arial, sans-serif;
 }
 
-/* Títulos dos blocos */
-.info-box h1 {
-    color: #333;
-    font-size: 1.2em;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.table-lecture th, .table-lecture2 th {
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
 }
 
-/* Listas */
-.info-box dd li {
-    margin-left: 20px;
-    color: #555;
-    font-size: 1em;
-    margin-top: 10px;
+.table-lecture td, .table-lecture2 td {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-lecture tr:nth-child(even), .table-lecture2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-lecture tr:hover, .table-lecture2 tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #5a54d6;
 }

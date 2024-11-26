@@ -24,194 +24,104 @@
     </div>
 
       
-    <div class="info-box">
-        <h1>Program Duration:</h1>
-        <dd>
-            <li>Start Date: July 10th, 2024</li>
-            <li>End Date: August 21st, 2024</li>
-        </dd>
-    </div>
+    <main class="team-container">
+        <!-- Card 1 -->
+        <div class="team-card">
+            <h2>Program Duration:</h2>
+            <br>
+            <dd>
+                <li>Start Date: July 10th, 2024</li>
+                <li>End Date: August 21st, 2024</li>
+            </dd>
+        </div>
+        <!-- Card 2 -->
+        <div class="team-card">
+            <h2>Versions of RTA:</h2>
+            <br>
+            <dt>School Coops (RCSD and DSBN):</dt>
+            <dd><li>Friday, 10 AM - 2 PM EST</li></dd>
+            <br>
+            <dt>College Students / Aspiring Data Scientists:</dt>
+            <dd><li>Flexible but should attend Wednesday sessions</li></dd>
+            <br>
+            <dt>RochesterWorks Paid Workers:</dt> 
+            <dd><li>Monday - Friday, 10 AM - 5 PM EST</li></dd>
+        </div>
+        <!-- Card 3 -->
+        <div class="team-card">
+            <h2>Weekly IBM Trainings:</h2>
+            <br>
+            <dd>
+                <li>All RTA versions will undergo IBM training and certification each week.</li>
+                <li>IBM training will align with weekly Wednesday lessons.</li>
+            </dd>
+        </div>
+        <!-- Card 4 -->
+        <div class="team-card">
+            <h2>Weekly Wednesday Lectures:</h2>
+            <br>
+            <dd>
+                <li>Time: 5 PM EST</li>
+                <li>Format: Online lecture, all RTA versions invited</li>
+            </dd>
+        </div>
+
+    </main>
+
+
+
+        <div class="container-lecture">
+            <h1>RTA Schedule</h1>
+            <table class="table-lecture2">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
     
-    <div class="info-box">
-        <h1>Versions of RTA:</h1>
-        <dt>School Coops (RCSD and DSBN):</dt>
-        <dd><li>Friday, 10 AM - 2 PM EST</li></dd>
-        <br>
-        <dt>College Students / Aspiring Data Scientists:</dt>
-        <dd><li>Flexible but should attend Wednesday sessions</li></dd>
-        <br>
-        <dt>RochesterWorks Paid Workers:</dt> 
-        <dd><li>Monday - Friday, 10 AM - 5 PM EST</li></dd>
-    </div>
+            <br><br>
     
-    <div class="info-box">
-        <h1>Weekly IBM Trainings:</h1>
-        <dd>
-            <li>All RTA versions will undergo IBM training and certification each week.</li>
-            <li>IBM training will align with weekly Wednesday lessons.</li>
-        </dd>
-    </div>
+            <h1>Lecture Schedule</h1>
+            <table class="table-lecture">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Date</th>
+                        <th>Instructor</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
     
-    <div class="info-box">
-        <h1>Weekly Wednesday Lectures:</h1>
-        <dd>
-            <li>Time: 5 PM EST</li>
-            <li>Format: Online lecture, all RTA versions invited</li>
-        </dd>
-    </div>
+            <div class="controls">
+                <input type="file" id="upload" accept=".xlsx" />
+                <button onclick="updateExcelData()">Update Excel</button>
+            </div>
+        </div>
     
-      
-    <br>
-   
-    <div class="container-lecture">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+        <script src="script.js"></script>
 
-        <h1>RTA Schedule</h1>
-        <table class="table-lecture2">
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10 AM</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>Client Projects</td>
-                </tr>
-                <tr>
-                    <td>11 AM</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                </tr>
-                <tr>
-                    <td>12 PM</td>
-                    <td>Lunch Break</td>
-                    <td>Lunch Break</td>
-                    <td>Lunch Break</td>
-                    <td>Lunch Break</td>
-                    <td>Lunch Break</td>
-                </tr>
-                <tr>
-                    <td>1 PM</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                    <td>IBM Training</td>
-                </tr>
-                <tr>
-                    <td>2 PM</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                    <td>Client Projects</td>
-                </tr>
-                <tr>
-                    <td>3 PM</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Client Projects</td>
-                </tr>
-                <tr>
-                    <td>4 PM</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Client Projects</td>
-                </tr>
-                <tr>
-                    <td>5 PM</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Weekly Lecture (All Versions)</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
+    
 
-        <br>
-        <br>
 
-        <h1>Lecture Schedule</h1>
-        <table class="table-lecture">
-            <thead>
-                <tr>
-                    <th>Week</th>
-                    <th>Date</th>
-                    <th>Instructor</th>
-                    <th>Topic</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>July 10</td>
-                    <td>Bob Lytle</td>
-                    <td>Introduction to Rel8ed.to Analytics / COFACE</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>July 17</td>
-                    <td>Tapan</td>
-                    <td>Chat GPT / AI</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>July 24</td>
-                    <td>Trei Alexander</td>
-                    <td>Power BI & Tableau</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>July 31</td>
-                    <td>Patrick</td>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>August 7</td>
-                    <td>Anthony</td>
-                    <td>Software Engineering & Data Web Scraping</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>August 14</td>
-                    <td>Mireille & Ryan</td>
-                    <td>Data Research & Qualitative Research</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>August 21</td>
-                    <td>Trei Alexander</td>
-                    <td>HACKATHON (Student Presentations)</td>
-                </tr>
-            </tbody>
-        </table>
 
-        
-    </div>
 
-    <br>
-    <br>
-    <br>
 
-  
+
+
    <!-- Rodapé com informações de contato -->
     <div class="footer">
 
@@ -245,6 +155,7 @@
     </div>
 
   
+    <script src="Curriculum.js"></script>
 
     <!-- <script src="../Curriculum/Curriculum.js"></script> -->
     <!-- Coloque aqui quaisquer outros scripts necessários para sua página principal -->
