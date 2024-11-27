@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     flex-direction: column; /* Importante para alinhar elementos corretamente */
     justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
     align-items: center; /* Centraliza na horizontal */
@@ -203,8 +203,26 @@ c-navigation a[slot="primary-items"].active {
 
 
 .container-lecture {
-    font-family: 'Arial', sans-serif;
-    margin: 20px;
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between; /* Adapta o espaçamento entre as tabelas */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  gap: 0px; /* Espaço entre as tabelas */
+  margin-top:0
+}
+
+.table-title {
+  display: flex;
+  justify-content: space-between; /* Adapta o espaçamento entre as tabelas */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  margin-bottom: 0;
+}
+
+.title1, .title2 {
+  width: 48%;
+  border-collapse: collapse;
+  margin: 0;
 }
 
 h1 {
@@ -215,12 +233,12 @@ h1 {
 }
 
 .table-lecture, .table-lecture2 {
-    width: 100%;
+    width: 48%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #f9f9f9;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
