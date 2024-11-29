@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     flex-direction: column; /* Importante para alinhar elementos corretamente */
     justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
     align-items: center; /* Centraliza na horizontal */
