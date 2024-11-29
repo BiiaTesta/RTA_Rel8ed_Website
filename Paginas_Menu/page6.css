@@ -109,7 +109,20 @@ c-navigation a[slot="primary-items"].active {
     width: 25%;
     color: rgb(255, 255, 255); /* Cor do texto do item ativo */
     font-size: 12px;
-}
+    color: #808191;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer h1{
+    font-size: 16px;
+    color: #f04a1f;
+  }
+  
+  .footer p, a{
+    margin:0;
+    color: #808191;
+  }
 
 /* ------------------------------------------------------------------------------------------ */
 

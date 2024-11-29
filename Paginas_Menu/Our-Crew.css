@@ -113,10 +113,23 @@ c-navigation a[slot="primary-items"].active {
 }
 
 .Footer_Adress{
-    float: left;
-    width: 25%;
-    color: rgb(255, 255, 255); /* Cor do texto do item ativo */
-    font-size: 12px;
+  float: left;
+  width: 25%;
+  color: rgb(255, 255, 255); /* Cor do texto do item ativo */
+  font-size: 12px;
+  color: #808191;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer h1{
+  font-size: 16px;
+  color: #f04a1f;
+}
+
+.footer p, a{
+  margin:0;
+  color: #808191;
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -314,13 +327,25 @@ c-navigation a[slot="primary-items"].active {
   font-size: 36px;
   margin:0;
   padding:0;
-  text-align: left;
 }
 
 .academy-header p {
   color: #000000;
-  font-size: 24px;
+  font-size: 18px;
   margin:0;
   padding:0;
-  font-style: italic;
+}
+
+.btn {
+  background-color: #f04a1f;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid #f05024;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+
+  border-radius: 10px;
 }

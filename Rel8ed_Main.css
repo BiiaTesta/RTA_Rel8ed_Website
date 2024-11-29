@@ -127,7 +127,17 @@ c-navigation a[slot="primary-items"].active {
     color: #808191;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-}
+  }
+  
+  .footer h1{
+    font-size: 16px;
+    color: #f04a1f;
+  }
+  
+  .footer p, a{
+    margin:0;
+    color: #808191;
+  }
 
 
 /* ------------------------------------------------------------------------------------------ */
