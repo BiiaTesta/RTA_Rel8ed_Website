@@ -7,7 +7,7 @@
 
 /* Estilos básicos para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -68,7 +68,7 @@ body {
 
 /* Estilos personalizados para o menu superior */
 c-navigation a[slot="primary-items"] {
-    font-family: 'Arial';
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     color: #6bbec5;
     text-decoration: none;
@@ -129,7 +129,7 @@ c-navigation a[slot="primary-items"].active {
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -286,4 +286,41 @@ c-navigation a[slot="primary-items"].active {
   margin: 0 auto 40px auto;
   text-align: left;
 
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Estilos adicionais para a seção Robot Training Academy */
+.academy-header {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: left;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.185),rgba(0, 0, 0, 0.082)),linear-gradient(rgba(244, 244, 244, 0.575),rgba(244, 244, 244, 0.897)),url(https://www.rel8ed.to/wp-content/uploads/2023/01/Lets-drive-your-business-to-success.-4-e1674873725281.png);
+    background-size: auto,auto,cover;
+  background-position: 20% 20%; 
+  width: 100%;
+  box-sizing: border-box;
+  height: 200;
+
+  text-shadow: 0px 5px 40px rgb(233, 133, 86);
+
+  flex-direction: column; /* Importante para alinhar elementos corretamente */
+  justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
+  align-items: center; /* Centraliza na horizontal */
+}
+
+.academy-header h1 {
+  color: #f04a1f;
+  font-size: 36px;
+  margin:0;
+  padding:0;
+  text-align: left;
+}
+
+.academy-header p {
+  color: #000000;
+  font-size: 24px;
+  margin:0;
+  padding:0;
+  font-style: italic;
 }

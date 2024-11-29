@@ -7,7 +7,7 @@
 
 /* Estilos básicos para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     /* display: flex; */
@@ -61,7 +61,7 @@ body {
 
 /* Estilos personalizados para o menu superior */
 c-navigation a[slot="primary-items"] {
-    font-family: 'Arial';
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #6bbec5; /* Cor do texto */
     text-decoration: none;
@@ -111,13 +111,14 @@ c-navigation a[slot="primary-items"].active {
     width: 25%;
     color: rgb(255, 255, 255); /* Cor do texto do item ativo */
     font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ------------------------------------------------------------------------------------------ */
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
