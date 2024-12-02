@@ -127,17 +127,17 @@ c-navigation a[slot="primary-items"].active {
     color: #808191;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-  }
+}
   
-  .footer h1{
+.footer h1{
     font-size: 16px;
     color: #f04a1f;
-  }
+}
   
-  .footer p, a{
+.footer p, a{
     margin:0;
     color: #808191;
-  }
+}
 
 
 /* ------------------------------------------------------------------------------------------ */
@@ -198,18 +198,6 @@ c-navigation a[slot="primary-items"].active {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #333;
-}
-
-/* Media queries para dispositivos móveis */
-@media (max-width: 768px) {
-    .Menu_Noticias {
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-
-    .menu-item {
-        flex-shrink: 0;
-    }
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -350,4 +338,94 @@ c-navigation a[slot="primary-items"].active {
     flex-grow: 1; */
     margin: auto;
     display: block;
+}
+
+/* --------------------- Ajuste para dispositivos móveis ------------------------------------ */
+
+/* Ajustar layout para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustar o cabeçalho */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header .logo {
+        height: 2.5em; /* Reduzir o tamanho do logo */
+    }
+
+    /* Estilo para a navegação */
+    .menu {
+        margin-top: 1em;
+    }
+
+    /* Conteúdo principal */
+    .content h1 {
+        font-size: 24px; /* Reduzir o tamanho do título */
+    }
+
+    .content p {
+        font-size: 16px; /* Reduzir o tamanho do texto */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    /* Ajustar os itens de notícias */
+    .Menu_Noticias {
+        flex-wrap: wrap; /* Permite quebra para próxima linha */
+        gap: 1em; /* Espaçamento entre os itens */
+    }
+
+    .menu-item {
+        width: 45%; /* Ocupa 45% da largura para caber 2 por linha */
+        height: auto;
+    }
+
+    /* Ajustar o rodapé */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Footer_Adress {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-bottom: 1em; /* Espaçamento entre as seções */
+    }
+
+    .academy-section1{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .academy-section2{
+        margin-right: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+    .menu-item {
+        width: 70%; /* Cada item ocupa a largura total */
+        margin: auto;
+    }
+
+    .content h1 {
+        font-size: 20px; /* Reduzir ainda mais para telas pequenas */
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+.Bip-image {
+    width: 100%; /* Ajusta automaticamente com base no container */
+    max-width: 400px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção */
 }

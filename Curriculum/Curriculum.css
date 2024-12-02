@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* display: flex; */
+    display: flex;
     flex-direction: column; /* Importante para alinhar elementos corretamente */
     justify-content: space-between; /* Distribui espaço entre cabeçalho e rodapé */
     align-items: center; /* Centraliza na horizontal */
@@ -74,19 +74,17 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para o rodapé */
 .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #081529;
-    border-top: 1px solid #ddd;
-    box-sizing: border-box;
-    /* position: fixed; */
-    bottom: 0;
-    height: 200px; /* Define a altura do rodapé */
-    position: relative;
-    bottom: 0;
-    background-color:#09162A;
-    width: 100%; /* tamanho total no eixo x (largura)*/
-    font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #081529;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+  /* position: fixed; */
+  bottom: 0;
+  height: 200px; /* Define a altura do rodapé */
+  position: relative;
+  background-color:#09162A;
+  width: 100%; /* tamanho total no eixo x (largura)*/
 }
 
 .Footer_Adress{
@@ -94,6 +92,7 @@ c-navigation a[slot="primary-items"].active {
   width: 25%;
   color: rgb(255, 255, 255); /* Cor do texto do item ativo */
   font-size: 12px;
+  background-color: #081529;
   color: #808191;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
@@ -226,17 +225,21 @@ c-navigation a[slot="primary-items"].active {
   margin-top:0
 }
 
-.table-title {
+/* .table-title {
   display: flex;
   justify-content: space-between; /* Adapta o espaçamento entre as tabelas */
-  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-  margin-bottom: 0;
-}
+  /*flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  /*margin-bottom: 0;
+  width: 100%;
+} */
 
 .title1, .title2 {
   width: 48%;
   border-collapse: collapse;
   margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -350,4 +353,73 @@ button:hover {
   display: inline-block;
 
   border-radius: 10px;
+}
+
+
+/* --------------------- Ajuste para dispositivos móveis ------------------------------------ */
+
+/* Ajustar layout para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Ajustar o cabeçalho */
+  .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header .logo {
+      height: 2.5em; /* Reduzir o tamanho do logo */
+  }
+
+  /* Estilo para a navegação */
+  .menu {
+      margin-top: 1em;
+  }
+
+  /* Conteúdo principal */
+  .content h1 {
+      font-size: 24px; /* Reduzir o tamanho do título */
+  }
+
+  .content p {
+      font-size: 16px; /* Reduzir o tamanho do texto */
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 2%;
+  }
+
+
+  /* Ajustar o rodapé */
+  .footer {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 20px;
+  }
+
+  .Footer_Adress {
+      width: 100%; /* Ocupa 100% da largura */
+      margin-bottom: 1em; /* Espaçamento entre as seções */
+  }
+
+  .container-lecture{
+    display: grid;
+  }
+
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+  .menu-item {
+      width: 70%; /* Cada item ocupa a largura total */
+      margin: auto;
+  }
+
+  .content h1 {
+      font-size: 20px; /* Reduzir ainda mais para telas pequenas */
+  }
+
+  .content p {
+      font-size: 14px;
+  }
 }
