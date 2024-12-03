@@ -346,28 +346,60 @@ header {
   
     /* Conteúdo principal */
     .content h1 {
-        font-size: 24px; /* Reduzir o tamanho do título */
+      font-size: 24px; /* Reduzir o tamanho do título */
     }
   
     .content p {
-        font-size: 16px; /* Reduzir o tamanho do texto */
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 2%;
+      font-size: 16px; /* Reduzir o tamanho do texto */
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 2%;
     }
   
   
     /* Ajustar o rodapé */
     .footer {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 20px;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 20px;
     }
   
     .Footer_Adress {
-        width: 100%; /* Ocupa 100% da largura */
-        margin-bottom: 1em; /* Espaçamento entre as seções */
+      width: 100%; /* Ocupa 100% da largura */
+      margin-bottom: 1em; /* Espaçamento entre as seções */
+    }
+  
+    .text_main{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .academy-section2{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .academy-section1{
+       width: 80%;
     }
   
   }
+  
+  /* Ajustes adicionais para telas muito pequenas */
+  @media (max-width: 480px) {
+    .menu-item {
+        width: 70%; /* Cada item ocupa a largura total */
+        margin: auto;
+    }
+  
+    .content h1 {
+        font-size: 20px; /* Reduzir ainda mais para telas pequenas */
+    }
+  
+    .content p {
+        font-size: 14px;
+    }
+  }
+  

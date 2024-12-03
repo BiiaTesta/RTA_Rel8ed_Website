@@ -243,28 +243,28 @@ c-navigation a[slot="primary-items"].active {
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 .table-lecture, .table-lecture2 {
-    width: 48%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .table-lecture th, .table-lecture2 th {
-    background-color: #19A39D;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    font-size: 1rem;
+  background-color: #19A39D;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
 }
 
 .table-lecture td, .table-lecture2 td {
@@ -378,32 +378,46 @@ button:hover {
 
   /* Conteúdo principal */
   .content h1 {
-      font-size: 24px; /* Reduzir o tamanho do título */
+    font-size: 24px; /* Reduzir o tamanho do título */
   }
 
   .content p {
-      font-size: 16px; /* Reduzir o tamanho do texto */
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 2%;
+    font-size: 16px; /* Reduzir o tamanho do texto */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
   }
 
 
   /* Ajustar o rodapé */
   .footer {
-      flex-direction: column;
-      text-align: center;
-      height: auto;
-      padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
   }
 
   .Footer_Adress {
-      width: 100%; /* Ocupa 100% da largura */
-      margin-bottom: 1em; /* Espaçamento entre as seções */
+    width: 100%; /* Ocupa 100% da largura */
+    margin-bottom: 1em; /* Espaçamento entre as seções */
   }
 
   .container-lecture{
-    display: grid;
+    display: block;
+    align-items: center;
+  }
+
+  .table-lecture2 td, .table-lecture2 th{
+    font-size: 9px;
+  }
+
+  .table-lecture td, .table-lecture th{
+    font-size: 9px;
+    width: auto;
+  }
+
+  .table-lecture, .table-lecture2{
+    width: 100%;
   }
 
 }
