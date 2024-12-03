@@ -101,7 +101,7 @@ c-navigation a[slot="primary-items"].active {
     box-sizing: border-box !important;
     /* position: fixed; */
     bottom: 0 !important;
-    height: 200px !important; /* Define a altura do rodapé */
+    /* height: 200px !important;  */
     position: relative;
     bottom: 0;
     background-color:#09162A;
@@ -205,3 +205,76 @@ main {
     list-style-type: disc;
     margin-left: 20px;
 }
+
+/* --------------------- Ajuste para dispositivos móveis ------------------------------------ */
+
+/* Ajustar layout para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustar o cabeçalho */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .header .logo {
+        height: 2.5em; /* Reduzir o tamanho do logo */
+    }
+  
+    /* Estilo para a navegação */
+    .menu {
+        margin-top: 1em;
+    }
+  
+    /* Conteúdo principal */
+    .content h1 {
+      font-size: 24px; /* Reduzir o tamanho do título */
+    }
+  
+    .content p {
+      font-size: 16px; /* Reduzir o tamanho do texto */
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 2%;
+    }
+  
+  
+    /* Ajustar o rodapé */
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .Footer_Adress {
+      width: 100%; /* Ocupa 100% da largura */
+      margin-bottom: 1em; /* Espaçamento entre as seções */
+    }
+  
+    .container{
+        display: block;
+    }
+    
+    .test-section{
+        margin:10px
+    }
+  
+  }
+  
+  /* Ajustes adicionais para telas muito pequenas */
+  @media (max-width: 480px) {
+    .menu-item {
+        width: 70%; /* Cada item ocupa a largura total */
+        margin: auto;
+    }
+  
+    .content h1 {
+        font-size: 20px; /* Reduzir ainda mais para telas pequenas */
+    }
+  
+    .content p {
+        font-size: 14px;
+    }
+  }
+  
