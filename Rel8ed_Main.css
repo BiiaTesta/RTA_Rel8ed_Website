@@ -401,15 +401,19 @@ c-navigation a[slot="primary-items"].active {
     }
 
     .academy-section1{
-        margin-left: 0;
+        margin: 0;
         width: 100%;
     }
 
     .academy-section2{
-        margin-right: 0;
+        margin: 0;
         width: 100%;
         height: 0;
         visibility: hidden;
+    }
+
+    .Menu_Noticias {
+        justify-content: center;
     }
 
     

@@ -101,7 +101,7 @@ c-navigation a[slot="primary-items"].active {
     box-sizing: border-box !important;
     /* position: fixed; */
     bottom: 0 !important;
-    height: 200px !important; /* Define a altura do rodapé */
+    /* height: 200px !important; */
     position: relative;
     bottom: 0;
     background-color:#09162A;
@@ -382,4 +382,154 @@ main {
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor leitura */
     border-radius: 5px;
+}
+
+
+/* --------------------- Ajuste para dispositivos móveis ------------------------------------ */
+
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajusta o cabeçalho para exibição vertical em telas pequenas */
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header .logo {
+        height: 2.5em; /* Reduzir o tamanho do logo */
+    }
+
+    /* Estilo para a navegação */
+    .menu {
+        margin-top: 1em;
+    }
+
+    /* Conteúdo principal */
+    .content h1 {
+        font-size: 24px; /* Reduzir o tamanho do título */
+    }
+
+    .content p {
+        font-size: 16px; /* Reduzir o tamanho do texto */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    /* Ajustar os itens de notícias */
+    .Menu_Noticias {
+        flex-wrap: wrap; /* Permite quebra para próxima linha */
+        gap: 1em; /* Espaçamento entre os itens */
+    }
+
+    .menu-item {
+        width: 45%; /* Ocupa 45% da largura para caber 2 por linha */
+        height: auto;
+    }
+
+    /* Ajustar o rodapé */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Footer_Adress {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-bottom: 1em; /* Espaçamento entre as seções */
+    }
+
+    .PBI-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .PBI-1-1-image {
+        max-width: 90%;
+    }
+
+    /* Ajusta o rodapé para exibição em colunas em dispositivos móveis */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer_Adress {
+        text-align: center;
+    }
+
+    /* Ajusta o tamanho do texto para telas pequenas */
+    header h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    /* Estilos de conteudo em dispositivos móveis */
+    .faq-container {
+        gap: 15px;
+        display:block !important;
+        width: 90%;
+        margin: auto;
+    }
+
+    .text{
+        display:block !important;
+        width: 90%;
+        margin: auto;   /* isso que fez ficar certo */
+    }
+
+    header{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container {
+        gap: 15px;
+        display:block !important;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .PBI-container {
+        gap: 10px;
+    }
+
+    .PBI-1-1-image {
+        max-width: 100%;
+    }
+
+    .column {
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer_Adress {
+        text-align: center;
+    }
 }
