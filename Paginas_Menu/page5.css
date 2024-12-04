@@ -94,11 +94,11 @@ c-navigation a[slot="primary-items"].active {
 
 /* Estilos para o rodapé */
 .footer {
-    padding: 20px !important;
+    padding: 20px;
     text-align: center;
     background-color: #081529;
     border-top: 1px solid #ddd;
-    box-sizing: border-box !important;
+    box-sizing: border-box ;
     /* position: fixed; */
     bottom: 0 !important;
     /* height: 200px !important; */
@@ -392,6 +392,11 @@ main {
 @media (max-width: 768px) {
     /* Ajusta o cabeçalho para exibição vertical em telas pequenas */
     
+    .main{
+        padding: 0;
+        margin:0
+    }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -435,7 +440,7 @@ main {
         flex-direction: column;
         text-align: center;
         height: auto;
-        padding: 20px;
+        padding: 0px;
     }
 
     .Footer_Adress {
@@ -446,26 +451,42 @@ main {
     .PBI-container {
         flex-direction: column;
         align-items: center;
+        margin: 0;
+        padding:0;
+    }
+
+    .PBI-general{
+        display: block;
+    }
+
+    .PBI-1, .PBI-2{
+        width: 90%;
     }
 
     .column {
         flex: 1;
-        min-width: 100%;
+        width: 90%;
+        padding: 0;
+        padding-bottom: 10px;
     }
 
     .PBI-1-1-image {
         max-width: 90%;
     }
 
-    /* Ajusta o rodapé para exibição em colunas em dispositivos móveis */
+    /* Ajustar o rodapé */
     .footer {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        height: auto;
+        /* padding: 20px; */
     }
 
     .Footer_Adress {
-        text-align: center;
+        width: 100%; /* Ocupa 100% da largura */
+        margin-bottom: 1em; /* Espaçamento entre as seções */
     }
+}
 
     /* Ajusta o tamanho do texto para telas pequenas */
     header h1 {
@@ -489,25 +510,31 @@ main {
         gap: 15px;
         display:block !important;
         width: 90%;
-        margin: auto;
+        /* margin: auto; */
+        padding: 0;
+        padding-left: 15px;
     }
 
     .text{
         display:block !important;
         width: 90%;
-        margin: auto;   /* isso que fez ficar certo */
+        /*margin: auto;    isso que fez ficar certo */
     }
 
     header{
-        width: 90%;
-        margin: auto;
+        width: 97%;
+        /* margin: auto; */
+        margin-left:0
     }
 
     .container {
-        gap: 15px;
+        /* gap: 15px; */
         display:block !important;
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        /* margin: auto; */
+        padding:0;
+        padding-left: 30px;
+        
     }
 }
 
@@ -520,9 +547,9 @@ main {
         max-width: 100%;
     }
 
-    .column {
+    /* .column {
         padding: 10px;
-    }
+    } */
 
     .footer {
         flex-direction: column;
