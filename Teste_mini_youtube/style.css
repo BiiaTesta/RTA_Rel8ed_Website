@@ -242,3 +242,99 @@ iframe{
     height: 730px;
     border-radius: 15px;
 }
+
+/* --------------------- Ajuste para dispositivos móveis ------------------------------------ */
+
+/* Ajustar layout para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustar o cabeçalho */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header .logo {
+        height: 2.5em; /* Reduzir o tamanho do logo */
+    }
+
+    /* Estilo para a navegação */
+    .menu {
+        margin-top: 1em;
+    }
+
+    /* Conteúdo principal */
+    .content h1 {
+        font-size: 24px; /* Reduzir o tamanho do título */
+    }
+
+    .content p {
+        font-size: 16px; /* Reduzir o tamanho do texto */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    /* Ajustar os itens de notícias */
+    .Menu_Noticias {
+        flex-wrap: wrap; /* Permite quebra para próxima linha */
+        gap: 1em; /* Espaçamento entre os itens */
+    }
+
+    .menu-item {
+        width: 45%; /* Ocupa 45% da largura para caber 2 por linha */
+        height: auto;
+    }
+
+    /* Ajustar o rodapé */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Footer_Adress {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-bottom: 1em; /* Espaçamento entre as seções */
+    }
+
+    iframe{
+        width:max-content;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .main-content{
+        display: block;
+    }
+
+    .lecture-details{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal{
+        width: 95%;
+        padding:0;
+        font-size: 13px;
+    }
+
+    
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+    .menu-item {
+        width: 70%; /* Cada item ocupa a largura total */
+        margin: auto;
+    }
+
+    .content h1 {
+        font-size: 20px; /* Reduzir ainda mais para telas pequenas */
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}

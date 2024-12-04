@@ -486,7 +486,7 @@ main {
         width: 100%; /* Ocupa 100% da largura */
         margin-bottom: 1em; /* Espaçamento entre as seções */
     }
-}
+
 
     /* Ajusta o tamanho do texto para telas pequenas */
     header h1 {
